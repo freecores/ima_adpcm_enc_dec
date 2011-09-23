@@ -122,7 +122,7 @@ begin
 					begin 
 						// set PCM sign bit and negate the calculated sample difference 
 						prePCM[3] <= 1'b1;
-						sampDiff <= (~sampDiff) + 1;
+						sampDiff <= (~sampDiff) + 20'd1;
 					end 
 					else 
 						// clear the PCM sign bit 
